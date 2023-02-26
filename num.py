@@ -2,9 +2,11 @@ import random
 
 
 r = random.randint(1,10)
-
+count = 0
 while True:
+	count = count + 1
 	num = input('请输入你要猜的数字： ')
+	print('这是第', count,'次猜')
 	num = int(num)
 	if r != num:
 		print('你猜错了 ')
